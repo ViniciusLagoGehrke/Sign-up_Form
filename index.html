@@ -2,36 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <section id="about">
+    <h2>Learn to code by watching others</h2>
+    <h4>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</h4>
+  </section>
+  <section id="cards">
+    <div class="card plan">
+      <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
+    </div>
+    <div class="card form">
+      <form>
+        <label for="firstName"><input type="text" id="firstName" name="firstName" placeholder="First Name" autofocus required>
+        </label><br>
+        
+        <label for="lastName"><input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        </label><br>
 
-  Learn to code by watching others
+        <label for="emailAddress"><input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
+        </label><br>
+        
+        <label for="password"><input type="password" id="password" name="password" placeholder="Password" required>
+        </label><br>
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+        <input class="btn" type="submit" value="Claim your free trial">
 
-  Try it free 7 days then $20/mo. thereafter
+        <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
+      </form>
+    </div>
+  </section>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
