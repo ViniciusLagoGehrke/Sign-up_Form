@@ -13,6 +13,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width:100vw;
   
   font-family: 'Poppins', sans-serif;
   color:white;
@@ -21,7 +22,7 @@ body{
   background-image: url(./images/bg-intro-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  }
+}
 
 #about, #cards{
   margin: 3rem auto 0;
@@ -83,13 +84,19 @@ body{
 }
 
 .form input{
-  border: 0.5px solid rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 5px;
   padding: 1.22rem 1rem;
   width:90%;
   font-size:0.85rem;
   font-weight:600;
   margin-bottom:1rem;
+}
+
+.form input:focus {
+  border: 0;
+  outline-width:1px;
+  outline-color: rgba(0,0,0,0.5);
 }
 
 .form .btn{
@@ -126,4 +133,115 @@ body{
   
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/***** LAPTOP&UP LAYOUT *****/
+
+/***** BODY DL *****/
+
+@media (min-width: 770px){
+
+  body{
+    height:100vh;
+    align-items:center;
+    
+    background-image: url(./images/bg-intro-desktop.png);
+  }
+
+  #about, #cards{
+    margin: 3rem auto 0;
+    width:50%;
+  }
+
+/***** ABOUT SECTION DL *****/
+
+  #about h2{
+    text-align: center;
+    font-size:3rem;
+    line-height:2;
+
+    width: 500px;
+    margin-top:2.6rem;
+  }
+
+  #about h4{
+    text-align: center;
+    width: 320px;
+    line-height:1.65;
+    font-weight:400;
+    margin-bottom: 0.85rem;
+  }
+
+  /***** CARDS SECTION DL *****/
+
+  .card{
+    width: 68.2%;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content:center;
+
+    box-shadow: 0 0.5rem 0 0 rgba(0,0,0,0.15);
+    border-radius: 10px;
+  }
+
+  .plan{
+    width: 57.2%;
+    background-color:var(--AccentBlue);
+    padding: 1.25rem 4rem;
+  }
+
+  .plan h4{
+    height: 1.25rem;
+    margin:0;
+
+    font-size:0.95rem;
+    line-height:1;
+  }
+
+  .form{
+    background-color:white;
+    padding: 1.5rem;
+  }
+
+  .form input{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 1.22rem 1rem;
+    width:90%;
+    font-size:0.85rem;
+    font-weight:600;
+    margin-bottom:1rem;
+  }
+
+  .form input:focus {
+    border: 0;
+    outline-width:1px;
+    outline-color: rgba(0,0,0,0.5);
+  }
+
+  .form .btn{
+    width:100%;
+    background-color: var(--PrimaryGreen);
+    padding: 1.11rem 1rem;
+    margin-bottom:0.5rem;
+    box-shadow: inset 0 -0.2rem 0 0 rgba(0,0,0,0.2);
+
+    color:white;
+    font-size:1rem;
+    text-transform:uppercase;
+  }
+
+  .form p{
+    margin:0 1rem;
+    text-align:center;
+    color: var(--NeutralGrayishBlue);
+    font-weight:400;
+    font-size:0.7rem;
+    line-height:2;
+  }
+
+  .form p strong{
+    color: var(--PrimaryRed);
+  }
+
 }
