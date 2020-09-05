@@ -86,7 +86,6 @@ body{
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 5px;
   padding: 1.22rem 1rem;
-  width:90%;
   font-size:0.85rem;
   font-weight:600;
   margin-bottom:1rem;
@@ -180,12 +179,11 @@ body{
   /***** CARDS SECTION DL *****/
 
   .card{
-    width: 627px;
-    padding: 0rem;
+    width: 495px;
+    padding:1.38rem;
   }
 
   .plan{
-    padding:1.38rem;
     margin-bottom: 1.5rem;
   }
 
@@ -195,17 +193,13 @@ body{
     line-height:1;
   }
 
-  .form{
-    background-color:white;
+  .form {
+    margin:1rem;
   }
 
   .form input{
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 5px;
     padding: 1.22rem 1rem;
     width:90%;
-    font-size:0.85rem;
-    font-weight:600;
     margin-bottom:1rem;
   }
 
