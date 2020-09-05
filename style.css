@@ -66,7 +66,6 @@ body{
 .plan{
   background-color:var(--AccentBlue);
   padding: 1.25rem 4rem;
-
 }
 
 .plan h4{
@@ -149,58 +148,55 @@ body{
   }
 
   #about, #cards{
-    margin: 3rem auto 0;
+    margin: 0;
     width:50%;
   }
 
 /***** ABOUT SECTION DL *****/
+  #about{
+    justify-content:flex-end;
+  }
 
   #about h2{
-    text-align: center;
+    text-align:left;
     font-size:3rem;
-    line-height:2;
+    line-height:1.15;
 
     width: 500px;
-    margin-top:2.6rem;
+    margin-top:1rem;
+    margin-bottom: 0.85rem;
   }
 
   #about h4{
-    text-align: center;
-    width: 320px;
+    text-align: left;
+    width: 500px;
     line-height:1.65;
     font-weight:400;
+
+    margin-top:1rem;
     margin-bottom: 0.85rem;
   }
 
   /***** CARDS SECTION DL *****/
 
   .card{
-    width: 68.2%;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content:center;
-
-    box-shadow: 0 0.5rem 0 0 rgba(0,0,0,0.15);
-    border-radius: 10px;
+    width: 627px;
+    padding: 0rem;
   }
 
   .plan{
-    width: 57.2%;
-    background-color:var(--AccentBlue);
-    padding: 1.25rem 4rem;
+    padding:1.38rem;
+    margin-bottom: 1.5rem;
   }
 
   .plan h4{
-    height: 1.25rem;
-    margin:0;
-
+    height: 1rem;
     font-size:0.95rem;
     line-height:1;
   }
 
   .form{
     background-color:white;
-    padding: 1.5rem;
   }
 
   .form input{
