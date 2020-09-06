@@ -10,6 +10,7 @@
 /***** BODY *****/
 
 body{
+  position:relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,7 +56,6 @@ body{
 
 .card{
   width: 100%;
-  margin-bottom: 1.5rem;
   display: flex;
   justify-content:center;
 
@@ -65,6 +65,7 @@ body{
 
 .plan{
   background-color:var(--AccentBlue);
+  margin-bottom: 1.5rem;
   padding: 1.25rem 4rem;
 }
 
@@ -79,10 +80,18 @@ body{
 
 .form{
   background-color:white;
+  margin-bottom: 4rem;
   padding: 1.5rem;
 }
 
+.form form{
+  width:100%;
+  margin: 0 auto;
+}
+
 .form input{
+  width:100%;
+
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 5px;
   padding: 1.22rem 1rem;
@@ -124,6 +133,13 @@ body{
 
 /***** FOOTER *****/
 
+footer{
+  position:absolute;
+  top: 95%;
+  left:50%;
+  transform:translateX(-50%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -135,9 +151,9 @@ body{
 
 /***** LAPTOP&UP LAYOUT *****/
 
-/***** BODY DL *****/
-
 @media (min-width: 770px){
+
+/***** BODY DL *****/
 
   body{
     height:100vh;
@@ -179,7 +195,7 @@ body{
   /***** CARDS SECTION DL *****/
 
   .card{
-    width: 495px;
+    width: 540px;
     padding:1.38rem;
   }
 
@@ -194,44 +210,23 @@ body{
   }
 
   .form {
-    margin:1rem;
+    padding:2.5rem;
+    margin-bottom: 0rem;
+  }
+
+  .form form{
+    width:100%;
   }
 
   .form input{
-    padding: 1.22rem 1rem;
-    width:90%;
-    margin-bottom:1rem;
-  }
-
-  .form input:focus {
-    border: 0;
-    outline-width:1px;
-    outline-color: rgba(0,0,0,0.5);
-  }
-
-  .form .btn{
+    padding: 1.22rem 2rem;
     width:100%;
-    background-color: var(--PrimaryGreen);
-    padding: 1.11rem 1rem;
-    margin-bottom:0.5rem;
-    box-shadow: inset 0 -0.2rem 0 0 rgba(0,0,0,0.2);
-
-    color:white;
-    font-size:1rem;
-    text-transform:uppercase;
   }
 
-  .form p{
-    margin:0 1rem;
-    text-align:center;
-    color: var(--NeutralGrayishBlue);
-    font-weight:400;
-    font-size:0.7rem;
-    line-height:2;
-  }
+/***** FOOTER *****/
 
-  .form p strong{
-    color: var(--PrimaryRed);
+  footer{
+    align-self:flex-end;
   }
 
 }
