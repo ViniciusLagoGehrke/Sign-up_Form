@@ -8,10 +8,11 @@
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style/normalize.css">
+  <link rel="stylesheet" href="style/style.css">
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
   <section id="about">
@@ -23,7 +24,7 @@
       <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
     </div>
     <div class="card form">
-      <form>
+      <form id="submission">
         <label for="firstName"></label>
         <input type="text" id="firstName" name="firstName" placeholder="First Name" autofocus required><br>
         
@@ -38,7 +39,7 @@
 
         <input class="btn" type="submit" value="Claim your free trial">
 
-        <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
+        <p>By clicking the button, you are agreeing to our <a href=""><strong>Terms and Services</strong></a></p>
 
       </form>
     </div>
@@ -49,5 +50,6 @@
       Coded by <a href="#https://github.com/ViniciusLagoGehrke">Vinicius Gehrke</a>.
     </p>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 </html>

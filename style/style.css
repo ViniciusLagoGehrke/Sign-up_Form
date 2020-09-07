@@ -20,7 +20,7 @@ body{
   color:white;
 
   background-color:var(--PrimaryRed);
-  background-image: url(./images/bg-intro-mobile.png);
+  background-image: url(../images/bg-intro-mobile.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -84,7 +84,7 @@ body{
   padding: 1.5rem;
 }
 
-.form form{
+#submission{
   width:100%;
   margin: 0 auto;
 }
@@ -118,6 +118,15 @@ body{
   text-transform:uppercase;
 }
 
+.form .btn:hover{
+  cursor:pointer;
+}
+
+.form .btn:active{
+  box-shadow:none;
+  transform: translateY(0.2rem);
+}
+
 .form p{
   margin:0 1rem;
   text-align:center;
@@ -129,6 +138,22 @@ body{
 
 .form p strong{
   color: var(--PrimaryRed);
+}
+
+.form a{
+  text-decoration:none;
+}
+
+.form a:hover{
+ text-decoration:underline;
+}
+
+.form a:active{
+ color:hsl(0, 96%, 11%);
+}
+
+.form a:active{
+ color:purple;
 }
 
 /***** FOOTER *****/
@@ -159,7 +184,7 @@ footer{
     height:100vh;
     align-items:center;
     
-    background-image: url(./images/bg-intro-desktop.png);
+    background-image: url(../images/bg-intro-desktop.png);
   }
 
   #about, #cards{
@@ -170,6 +195,7 @@ footer{
 /***** ABOUT SECTION DL *****/
   #about{
     justify-content:flex-end;
+    padding-right:4rem;
   }
 
   #about h2{
@@ -194,6 +220,10 @@ footer{
 
   /***** CARDS SECTION DL *****/
 
+  #cards{
+    justify-content:flex-start;
+  }
+
   .card{
     width: 540px;
     padding:1.38rem;
@@ -214,7 +244,7 @@ footer{
     margin-bottom: 0rem;
   }
 
-  .form form{
+  #submission{
     width:100%;
   }
 
