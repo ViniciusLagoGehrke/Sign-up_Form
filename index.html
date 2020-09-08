@@ -13,6 +13,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
+  <script defer src="js/form.js"></script>
+
 </head>
 <body>
   <section id="about">
@@ -24,20 +26,33 @@
       <h4><strong>Try it free 7 days</strong> then $20/mo. thereafter</h4>
     </div>
     <div class="card form">
-      <form id="submission">
-        <label for="firstName"></label>
-        <input type="text" id="firstName" name="firstName" placeholder="First Name" autofocus required><br>
-        
-        <label for="lastName"></label>
-        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required><br>
-
-        <label for="emailAddress"></label>
-        <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required><br>
-        
-        <label for="password"></label>
-        <input type="password" id="password" name="password" placeholder="Password" required><br>
-
-        <input class="btn" type="submit" value="Claim your free trial">
+      <form id="submission" method="POST">
+        <ul>
+          <li>
+            <label for=""></label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" autofocus required>
+            <img src="./images/icon-error.svg">
+            <small class="error-msg firstName">First Name cannot be empty</small><br>
+          </li>
+          <li>
+            <label for="lastName"></label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+            <img src="./images/icon-error.svg">
+            <small class="error-msg lastName">Last Name cannot be empty</small><br>
+          </li>
+          <li>
+            <label for="emailAddress"></label>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="Email Address" required>
+            <img src="./images/icon-error.svg">
+            <small class="error-msg emailAddress">Looks like this in not an email</small><br>
+          </li>
+          <li>
+            <label for="password"></label>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <img src="./images/icon-error.svg">
+            <small class="error-msg password">Password cannot be empty</small><br>
+          </li>
+        <input class="button" type="submit" value="Claim your free trial">
 
         <p>By clicking the button, you are agreeing to our <a href=""><strong>Terms and Services</strong></a></p>
 
@@ -50,6 +65,5 @@
       Coded by <a href="#https://github.com/ViniciusLagoGehrke">Vinicius Gehrke</a>.
     </p>
   </footer>
-  <script src="js/form.js"></script>
 </body>
 </html>
