@@ -1,289 +1,309 @@
 :root{
-  --PrimaryRed: hsl(0, 100%, 74%);
-  --PrimaryGreen: hsl(154, 59%, 51%);
-  --AccentBlue: hsl(248, 32%, 49%);
-  --NeutralDarkBlue: hsl(249, 10%, 26%);
-  --NeutralGrayishBlue: hsl(246, 25%, 77%);
-  font-size:16px;
+ --PrimaryRed: hsl(0, 100%, 74%);
+ --PrimaryGreen: hsl(154, 59%, 51%);
+ --AccentBlue: hsl(248, 32%, 49%);
+ --NeutralDarkBlue: hsl(249, 10%, 26%);
+ --NeutralGrayishBlue: hsl(246, 25%, 77%);
+ font-size:16px;
 }
-
+ 
 /***** BODY *****/
-
+ 
 body{
-  position:relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width:100vw;
-  
+ position:relative;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ width:100vw;
   font-family: 'Poppins', sans-serif;
-  color:white;
-
-  background-color:var(--PrimaryRed);
-  background-image: url(../images/bg-intro-mobile.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
+ color:white;
+ 
+ background-color:var(--PrimaryRed);
+ background-image: url(../images/bg-intro-mobile.png);
+ background-repeat: no-repeat;
+ background-size: 100%;
 }
-
+ 
 #about, #cards{
-  margin: 3rem auto 0;
-  width:330px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+ margin: 3rem auto 0;
+ width:330px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
 }
-
+ 
 /***** ABOUT SECTION *****/
-
+ 
 #about h2{
-  text-align: center;
-  font-size:1.7rem;
-  line-height:1.38;
-
-  width: 300px;
-  margin-top:2.6rem;
+ text-align: center;
+ font-size:1.7rem;
+ line-height:1.38;
+ 
+ width: 300px;
+ margin-top:2.6rem;
 }
-
+ 
 #about h4{
-  text-align: center;
-  width: 320px;
-  line-height:1.65;
-  font-weight:400;
-  margin-bottom: 0.85rem;
+ text-align: center;
+ width: 320px;
+ line-height:1.65;
+ font-weight:400;
+ margin-bottom: 0.85rem;
 }
-
+ 
 /***** CARDS SECTION *****/
-
+ 
 .card{
-  width: 100%;
-  display: flex;
-  justify-content:center;
-
-  box-shadow: 0 0.5rem 0 0 rgba(0,0,0,0.15);
-  border-radius: 10px;
+ width: 100%;
+ display: flex;
+ justify-content:center;
+ 
+ box-shadow: 0 0.5rem 0 0 rgba(0,0,0,0.15);
+ border-radius: 10px;
 }
-
+ 
 .plan{
-  background-color:var(--AccentBlue);
-  margin-bottom: 1.5rem;
-  padding: 1.25rem 4rem;
+ background-color:var(--AccentBlue);
+ margin-bottom: 1.5rem;
+ padding: 1.25rem 4rem;
 }
-
+ 
 .plan h4{
-  height: 3rem;
-  margin:0;
-
-  text-align: center;
-  line-height:1.6;
-  font-weight:400;
+ height: 3rem;
+ margin:0;
+ 
+ text-align: center;
+ line-height:1.6;
+ font-weight:400;
 }
-
-.form{
-  background-color:white;
-  margin-bottom: 4rem;
-  padding: 1.5rem;
+ 
+.form-wrap{
+ background-color:white;
+ margin-bottom: 4rem;
+ padding: 1.5rem;
 }
-
-#submission{
-  width:100%;
-  margin: 0 auto;
-  position:relative;
+ 
+#form{
+ width:100%;
+ margin: 0 auto;
+ position:relative;
 }
-
-#submission ul{
-  margin: 0;
-  padding:0;
+ 
+#form ul{
+ margin: 0;
+ padding:0;
 }
-
-#submission ul li{
-  position:relative;
+ 
+#form ul li{
+ position:relative;
 }
-
-#submission img{
-  position: absolute;
-  top:30%;
-  left:92%;
-  transform: translate(-50%,-50%);
+ 
+.form-wrap input{
+ position: relative;
+ width:100%;
+ 
+ border: 1px solid rgba(0,0,0,0.1);
+ border-radius: 5px;
+ padding: 1.22rem 1rem;
+ font-size:0.85rem;
+ font-weight:600;
+ margin-bottom:1rem;
 }
-
-.form input{
-  position: relative;
-  width:100%;
-
-  border: 1px solid rgba(0,0,0,0.1);
-  border-radius: 5px;
-  padding: 1.22rem 1rem;
-  font-size:0.85rem;
-  font-weight:600;
-  margin-bottom:1rem;
+ 
+.form-wrap input:focus {
+ border: 0;
+ outline-width:1px;
+ outline-color: rgba(0,0,0,0.5);
 }
-
-.form input:focus {
-  border: 0;
-  outline-width:1px;
-  outline-color: rgba(0,0,0,0.5);
+ 
+#form li.error input{
+ border: 2px solid var(--PrimaryRed);
+ margin-bottom: 2.5rem;
+ color: var(--PrimaryRed);
 }
-
-.form small{
-  display:inline-block;
-  color:var(--PrimaryRed);
-  font-style:italic;
-  font-size:0.7rem;
-  font-weight:600;
+ 
+#form img{
+ display:none;
+ position: absolute;
+ top:30%;
+ left:92%;
+ transform: translate(-50%,-50%);
 }
-
-.form .button{
-  width:100%;
-  background-color: var(--PrimaryGreen);
-  padding: 1.11rem 1rem;
-  margin-bottom:0.5rem;
-  box-shadow: inset 0 -0.2rem 0 0 rgba(0,0,0,0.2);
-
-  color:white;
-  font-size:1rem;
-  text-transform:uppercase;
+ 
+#form li.error img{
+ display:block;
 }
-
-.form .button:hover{
-  cursor:pointer;
+ 
+.form-wrap small{
+ display:none;
+ color:var(--PrimaryRed);
+ font-style:italic;
+ font-size:0.7rem;
+ font-weight:600;
+ 
+ position: absolute;
+ right:0;
+ top: 65%;
+ z-index: 1;
+ margin-bottom: 1rem;
 }
-
-.form .button:active{
-  box-shadow:none;
-  transform: translateY(0.2rem);
-  opacity:0.6;
+ 
+#form li.error small{
+ display:block;
 }
-
-.form p{
-  margin:0 1rem;
-  text-align:center;
-  color: var(--NeutralGrayishBlue);
-  font-weight:400;
-  font-size:0.7rem;
-  line-height:2;
+ 
+.form-wrap .button{
+ width:100%;
+ background-color: var(--PrimaryGreen);
+ padding: 1.11rem 1rem;
+ margin-bottom:0.5rem;
+ box-shadow: inset 0 -0.2rem 0 0 rgba(0,0,0,0.2);
+ 
+ color:white;
+ font-size:1rem;
+ text-transform:uppercase;
 }
-
-.form p strong{
-  color: var(--PrimaryRed);
+ 
+.form-wrap .button:hover{
+ cursor:pointer;
 }
-
-.form a{
-  text-decoration:none;
+ 
+.form-wrap .button:active{
+ box-shadow:none;
+ transform: translateY(0.2rem);
+ opacity:0.6;
 }
-
-.form a:hover{
- text-decoration:underline;
+ 
+.form-wrap p{
+ margin:0 1rem;
+ text-align:center;
+ color: var(--NeutralGrayishBlue);
+ font-weight:400;
+ font-size:0.7rem;
+ line-height:2;
 }
-
-.form a:active{
- color:hsl(0, 96%, 11%);
+ 
+.form-wrap p strong{
+ color: var(--PrimaryRed);
 }
-
-.form a:active{
- color:purple;
+ 
+.form-wrap a{
+ text-decoration:none;
 }
-
+ 
+.form-wrap a:hover{
+text-decoration:underline;
+}
+ 
+.form-wrap a:active{
+color:hsl(0, 96%, 11%);
+}
+ 
+.form-wrap a:active{
+color:purple;
+}
+ 
 /***** FOOTER *****/
-
+ 
 footer{
-  position:absolute;
-  top: 95%;
-  left:50%;
-  transform:translateX(-50%);
+ position:absolute;
+ top: 95%;
+ left:50%;
+ transform:translateX(-50%);
 }
-
+ 
 .attribution {
-  font-size: 11px;
-  text-align: center;
+ font-size: 11px;
+ text-align: center;
 }
-  
-.attribution a {
-  color: hsl(228, 45%, 44%);
+ .attribution a {
+ color: hsl(228, 45%, 44%);
 }
-
+ 
 /***** LAPTOP&UP LAYOUT *****/
-
+ 
 @media (min-width: 770px){
-
+ 
 /***** BODY DL *****/
-
-  body{
-    height:100vh;
-    align-items:center;
-    
-    background-image: url(../images/bg-intro-desktop.png);
-  }
-
-  #about, #cards{
-    margin: 0;
-    width:50%;
-  }
-
+ 
+ body{
+   height:100vh;
+   align-items:center;
+  
+   background-image: url(../images/bg-intro-desktop.png);
+ }
+ 
+ #about, #cards{
+   margin: 0;
+   width:50%;
+   flex-direction: column;
+ }
+ 
 /***** ABOUT SECTION DL *****/
-  #about{
-    justify-content:flex-end;
-    padding-right:4rem;
-  }
-
-  #about h2{
-    text-align:left;
-    font-size:3rem;
-    line-height:1.15;
-
-    width: 500px;
-    margin-top:1rem;
-    margin-bottom: 0.85rem;
-  }
-
-  #about h4{
-    text-align: left;
-    width: 500px;
-    line-height:1.65;
-    font-weight:400;
-
-    margin-top:1rem;
-    margin-bottom: 0.85rem;
-  }
-
-  /***** CARDS SECTION DL *****/
-
-  #cards{
-    justify-content:flex-start;
-  }
-
-  .card{
-    width: 540px;
-    padding:1.38rem;
-  }
-
-  .plan{
-    margin-bottom: 1.5rem;
-  }
-
-  .plan h4{
-    height: 1rem;
-    font-size:0.95rem;
-    line-height:1;
-  }
-
-  .form {
-    padding:2.5rem;
-    margin-bottom: 0rem;
-  }
-
-  #submission{
-    width:100%;
-  }
-
-  .form input{
-    padding: 1.22rem 2rem;
-    width:100%;
-  }
-
+ #about{
+   align-items:flex-end;
+   padding-right:4rem;
+ }
+ 
+ #about h2{
+   text-align:left;
+   font-size:3rem;
+   line-height:1.15;
+ 
+   width: 500px;
+   margin-top:1rem;
+   margin-bottom: 0.85rem;
+ }
+ 
+ #about h4{
+   text-align: left;
+   width: 500px;
+   line-height:1.65;
+   font-weight:400;
+ 
+   margin-top:1rem;
+   margin-bottom: 0.85rem;
+ }
+ 
+ /***** CARDS SECTION DL *****/
+ 
+ #cards{
+   justify-content:flex-start;
+ }
+ 
+ .card{
+   width: 540px;
+   padding:1.38rem;
+ }
+ 
+ .plan{
+   margin-bottom: 1.5rem;
+ }
+ 
+ .plan h4{
+   height: 1rem;
+   font-size:0.95rem;
+   line-height:1;
+ }
+ 
+ .form-wrap {
+   padding:2.5rem;
+   margin-bottom: 0rem;
+ }
+ 
+ #form{
+   width:100%;
+ }
+ 
+ .form-wrap input{
+   padding: 1.22rem 2rem;
+   width:100%;
+ }
+ 
 /***** FOOTER *****/
-
-  footer{
-    align-self:flex-end;
-  }
-
+ 
+ footer{
+   align-self:flex-end;
+ }
+ 
 }
