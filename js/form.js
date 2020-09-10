@@ -62,7 +62,7 @@ function checkInputs(){
 }
  
 function setErrorFor(input, message){
- const formControl = input.parentElement; //li .form-control
+ const formControl = input.parentElement; //div .form-control
  const errorMessage = formControl.querySelector('.error-msg');
  
  //add error message inside small

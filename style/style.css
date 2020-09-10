@@ -89,12 +89,7 @@ body{
  position:relative;
 }
  
-#form ul{
- margin: 0;
- padding:0;
-}
- 
-#form ul li{
+.form-control{
  position:relative;
 }
  
@@ -116,7 +111,7 @@ body{
  outline-color: rgba(0,0,0,0.5);
 }
  
-#form li.error input{
+#form div.error input{
  border: 2px solid var(--PrimaryRed);
  margin-bottom: 2.5rem;
  color: var(--PrimaryRed);
@@ -130,7 +125,7 @@ body{
  transform: translate(-50%,-50%);
 }
  
-#form li.error img{
+#form div.error img{
  display:block;
 }
  
@@ -148,7 +143,7 @@ body{
  margin-bottom: 1rem;
 }
  
-#form li.error small{
+#form div.error small{
  display:block;
 }
  
