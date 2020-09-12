@@ -17,7 +17,7 @@ Users are able to:
   - Any `input` field is empty. The message for this error should say *"[Field Name] cannot be empty"*
   - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say *"Looks like this is not an email"*
 
-**What I learned an pratice In this challenge besides the basic of HTML, CSS and JavaScript:**
+**What I learned and praticed In this challenge besides the basic of HTML, CSS and JavaScript:**
 
 -FORM tag on HTML with label, input, ul and li tags.
 
