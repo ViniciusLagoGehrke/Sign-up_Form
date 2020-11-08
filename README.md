@@ -25,6 +25,6 @@ Users are able to:
 
 -JS adEventListener(), preventDefault(), and string.trim()
 
--Validation with inputs are blank
+-Validation when inputs are blank
 
 -Email validation with REGEX
