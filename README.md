@@ -1,9 +1,8 @@
-# Frontend Mentor - Intro component with sign up form
+# Intro component with sign up form
 
-![A preview for my solution of the Intro component with sign up form coding challenge](Desktop_Preview.png)
+Praticed HTML Form validation including email validation with REGEX. JS methods: addEventListener, preventDefault and DOM manipulation.
 
-Please check this link with my solution fully working:
-[Live App](https://fem-sign-up-form.vercel.app/)
+![A preview for my solution of the Intro component with sign up form coding challenge](desktop-preview.jpg)
 
 ## The challenge
 
@@ -28,3 +27,9 @@ Users are able to:
 -Validation when inputs are blank
 
 -Email validation with REGEX
+
+...
+
+Please check the [live website](https://fem-sign-up-form.vercel.app/)
+
+[OnPortfolio](https://front-end-portfolio.vercel.app/)
