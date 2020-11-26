@@ -10,45 +10,43 @@
 /***** BODY *****/
  
 body{
- position:relative;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
- width:100vw;
+  position:relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width:100vw;
   font-family: 'Poppins', sans-serif;
- color:white;
- 
- background-color:var(--PrimaryRed);
- background-image: url(../images/bg-intro-mobile.png);
- background-repeat: no-repeat;
- background-size: 100%;
+  color:white;
+
+  background-color:var(--PrimaryRed);
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
  
 #about, #cards{
- margin: 3rem auto 0;
- width:330px;
- display: flex;
- flex-wrap: wrap;
- justify-content: center;
+  margin: 3rem auto 0;
+  width: 88%;
+  max-width:500px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
  
 /***** ABOUT SECTION *****/
  
 #about h2{
- text-align: center;
- font-size:1.7rem;
- line-height:1.38;
- 
- width: 300px;
- margin-top:2.6rem;
+  text-align: center;
+  font-size:1.7rem;
+  line-height:1.38;
+  margin-top:2.6rem;
 }
  
 #about h4{
- text-align: center;
- width: 320px;
- line-height:1.65;
- font-weight:400;
- margin-bottom: 0.85rem;
+  text-align: center;
+  line-height:1.65;
+  font-weight:400;
+  margin-bottom: 0.85rem;
 }
  
 /***** CARDS SECTION *****/
@@ -66,15 +64,17 @@ body{
  background-color:var(--AccentBlue);
  margin-bottom: 1.5rem;
  padding: 1.25rem 4rem;
+ height: 88px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
  
 .plan h4{
- height: 3rem;
- margin:0;
- 
- text-align: center;
- line-height:1.6;
- font-weight:400;
+  margin:0;
+  text-align: center;
+  line-height:1.6;
+  font-weight:400;
 }
  
 .form-wrap{
@@ -220,84 +220,85 @@ footer{
  
 /***** BODY DL *****/
  
- body{
-   height:100vh;
-   align-items:center;
-  
-   background-image: url(../images/bg-intro-desktop.png);
- }
+  body{
+    height:100vh;
+    align-items:center;
+    padding: 2rem;    
+    background-image: url(../images/bg-intro-desktop.png);
+  }
  
- #about, #cards{
-   margin: 0;
-   width:50%;
-   flex-direction: column;
- }
+  #about, #cards{
+    margin: 0;
+    width:50%;
+    flex-direction: column;
+  }
  
 /***** ABOUT SECTION DL *****/
- #about{
-   align-items:flex-end;
-   padding-right:4rem;
- }
- 
- #about h2{
-   text-align:left;
-   font-size:3rem;
-   line-height:1.15;
- 
-   width: 500px;
-   margin-top:1rem;
-   margin-bottom: 0.85rem;
- }
- 
- #about h4{
-   text-align: left;
-   width: 500px;
-   line-height:1.65;
-   font-weight:400;
- 
-   margin-top:1rem;
-   margin-bottom: 0.85rem;
- }
- 
- /***** CARDS SECTION DL *****/
- 
- #cards{
-   justify-content:flex-start;
- }
- 
- .card{
-   width: 540px;
-   padding:1.38rem;
- }
- 
- .plan{
-   margin-bottom: 1.5rem;
- }
- 
- .plan h4{
-   height: 1rem;
-   font-size:0.95rem;
-   line-height:1;
- }
- 
- .form-wrap {
-   padding:2.5rem;
-   margin-bottom: 0rem;
- }
- 
- #form{
-   width:100%;
- }
- 
- .form-wrap input{
-   padding: 1.22rem 2rem;
-   width:100%;
- }
- 
-/***** FOOTER *****/
- 
- footer{
-   align-self:flex-end;
- }
+  #about{
+    align-items:flex-end;
+    padding-right:4rem;
+  }
+  
+  #about h2{
+    text-align:left;
+    font-size:3rem;
+    line-height:1.15;
+  
+    max-width: 500px;
+    margin-top:1rem;
+    margin-bottom: 0.85rem;
+  }
+  
+  #about h4{
+    text-align: left;
+    max-width: 500px;
+    line-height:1.65;
+    font-weight:400;
+  
+    margin-top:1rem;
+    margin-bottom: 0.85rem;
+  }
+  
+  /***** CARDS SECTION DL *****/
+  
+  #cards{
+    justify-content:flex-start;
+  }
+  
+  .card{
+    width: 100%;
+    max-width: 540px;
+    padding:1.38rem;
+  }
+  
+  .plan{
+    margin-bottom: 1.5rem;
+  }
+  
+  .plan h4{
+    height: 1rem;
+    font-size:0.95rem;
+    line-height:1;
+  }
+  
+  .form-wrap {
+    padding:2.5rem;
+    margin-bottom: 0rem;
+  }
+  
+  #form{
+    width:100%;
+  }
+  
+  .form-wrap input{
+    padding: 1.22rem 2rem;
+    width:100%;
+  }
+  
+  /***** FOOTER *****/
+  
+  footer{
+    align-self:flex-end;
+  }
  
 }
